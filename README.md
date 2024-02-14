@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Social Links Profile](https://your-solution-url.com)
-- Live Site URL: [Social Links Profile](https://your-live-site-url.com)
+- Solution URL: [Social Links Profile](https://github.com/dayronfurcain/social-links-profile)
+- Live Site URL: [Social Links Profile](https://your-live-site-url.com](https://dayronfurcain.github.io/social-links-profile)
 
 ## My process
 
