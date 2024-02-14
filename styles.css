@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap');
+
+:root {
+  /* Color Primary */
+  --clr-green: hsl(75, 94%, 57%);
+
+  /* Neutral */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 20%);
+  --clr-gark-grey: hsl(0, 0%, 12%);
+  --clr-off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  min-width: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-off-black);
+  color: var(--clr-white);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  row-gap: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-gark-grey);
+}
+
+.profile__user {
+  display: grid;
+  grid-template-columns: max-content;
+  place-items: center;
+  row-gap: 2rem;
+}
+
+.profile__avatar {
+  width: 90px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile__data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+}
+
+.profile__name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.profile__city {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--clr-green);
+}
+
+.profile__social-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 0.8rem;
+  width: 100%;
+}
+
+.profile__social-item {
+  background-color: var(--clr-grey);
+  padding-block: 0.8rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile__social-item:hover {
+  background-color: var(--clr-green);
+}
+
+.profile__social-link {
+  font-weight: 600;
+  color: var(--clr-white);
+  transition: color 0.3s;
+}
+
+.profile__social-item:hover .profile__social-link {
+  color: var(--clr-gark-grey);
+}
